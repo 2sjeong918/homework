@@ -1,0 +1,76 @@
+@charset "utf-8";
+.wrapper{
+    width: 800px;
+    height: 800px;
+}
+.wrapper div{
+    float: right;
+}
+.set1, .set4{
+    width: 200px;
+    height: 800px;
+}
+.set2, .set3{
+    width: 400px;
+    height: 400px;
+}
+.set2 div{
+    float: left;
+}
+.set4{
+    margin-top: -400px;
+}
+.set1 div, .set2 div, .set3 div, .set4 div{
+    width: 200px;
+    height: 200px;
+}
+
+.set1 div:nth-of-type(1){
+    background: rgba(250, 0, 0, 1);
+}
+.set1 div:nth-of-type(2){
+    background: rgba(240, 0, 10, 1);
+}
+.set1 div:nth-of-type(3){
+    background: rgba(230, 0, 20, 1);
+}
+.set1 div:nth-of-type(4){
+    background: rgba(220, 0, 30, 1);
+}
+.set2 div:nth-of-type(1){
+    background: rgba(210, 0, 40, 1);
+}
+.set2 div:nth-of-type(2){
+    background: rgba(200, 0, 50, 1);
+}
+.set2 div:nth-of-type(3){
+    background: rgba(190, 0, 60, 1);
+}
+.set2 div:nth-of-type(4){
+    background: rgba(180, 0, 70, 1);
+}
+.set3 div:nth-of-type(1){
+    background: rgba(170, 0, 80, 1);
+}
+.set3 div:nth-of-type(2){
+    background: rgba(160, 0, 90, 1);
+    margin: 
+}
+.set3 div:nth-of-type(3){
+    background: rgba(150, 0, 100, 1);
+}
+.set3 div:nth-of-type(4){
+    background: rgba(140, 0, 110, 1);
+}
+.set4 div:nth-of-type(1){
+    background: rgba(130, 0, 120, 1);
+}
+.set4 div:nth-of-type(2){
+    background: rgba(120, 0, 130, 1);
+}
+.set4 div:nth-of-type(3){
+    background: rgba(110, 0, 140, 1);
+}
+.set4 div:nth-of-type(4){
+    background: rgba(100, 0, 150, 1);
+}
