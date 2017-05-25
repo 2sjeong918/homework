@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+.button{
+    margin: 0 auto;
+    width: 620px;
+    padding-top: 200px;
+}
+.btn{
+    width: 200px;
+    height: 50px;
+    /*background: skyblue;*/
+    /*border: none;*/
+    border-radius: 5px;
+    background: #fff;
+    padding: 0;
+}
+.left{
+    border: 1px solid skyblue;
+    position: relative;
+}
+.left::before{
+    content: '';
+    width: 0;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: skyblue;
+    transition: all 1s;
+}
+.left:hover::before{
+    width: 100%;
+}
+
+.center{
+    border: none;
+    position: relative;
+}
+.center::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    border-color: skyblue;
+    transition: all 1s;
+}
+.center:hover::before{
+    border-bottom: 1px solid skyblue;
+    left: 0;
+    right: 0;
+}
+
+.right{
+    border: none;
+    position: relative;
+}
+.right::before{
+    position: absolute;
+    content: '';
+    left: 50%;
+    right: 50%;
+    top: 0;
+    bottom: 0;
+    border-top: 1px solid skyblue;
+    border-bottom: 1px solid skyblue;
+    transition: all 1s;
+}
+.right::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: 50%;
+    border-left: 1px solid skyblue;
+    border-right: 1px solid skyblue;
+    transition: all 1s;
+}
+.right:hover::before{
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+}
+.right:hover::after{
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+}
