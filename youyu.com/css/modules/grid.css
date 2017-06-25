@@ -753,7 +753,7 @@ table {
   display: none;
 }
 
-.a11y-hidden, legend {
+.a11y-hidden {
   overflow: hidden;
   position: absolute;
   clip: rect(0, 0, 0, 0);
@@ -764,7 +764,7 @@ table {
   padding: 0;
 }
 
-.a11y-hidden.focusable:focus, legend.focusable:focus {
+.a11y-hidden.focusable:focus {
   overflow: visible;
   position: static;
   clip: auto;
@@ -830,7 +830,7 @@ header {
 
 #search-form button {
   position: absolute;
-  top: 22px;
+  top: 12px;
   border: 0;
   width: 18px;
   height: 18px;
@@ -902,7 +902,7 @@ header {
   margin-right: 10px;
 }
 
-.filter-list > li {
+.filter-list > legend {
   height: 21px;
   background: skyblue;
 }
@@ -956,6 +956,16 @@ main {
 
 .best-item li, .new-item li {
   height: 357px;
+  position: relative;
+}
+
+.best-item li button, .new-item li button {
+  overflow: hidden;
+  background-image: url(../../images/icons/icons.svg);
+  background-position: 0 -370px;
+  background-size: 24px auto;
+  width: 18px;
+  height: 17px;
 }
 
 .best-item a, .best-item img, .best-item span, .new-item a, .new-item img, .new-item span, .review-item a, .review-item img, .review-item span {

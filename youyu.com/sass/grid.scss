@@ -118,7 +118,7 @@
   display: none;
 }
 // .a11y-hidden
-.a11y-hidden, legend {
+.a11y-hidden{
   overflow: hidden;
   position: absolute;
   clip:     rect(0,0,0,0);
@@ -185,7 +185,7 @@ header{
   
   button{
     position: absolute;
-    top: leading(1)+1px;
+    top: leading(1)-9px;
     border: 0;
     width: $btn-size;
     height: $btn-size;
@@ -255,7 +255,7 @@ header{
     }
     }
 }
-.filter-list > li{
+.filter-list > legend{
   height: leading(1);
   background: skyblue;
 }
@@ -307,6 +307,15 @@ main {
 .best-item, .new-item{
   li{
     height: leading(17);
+    position: relative;
+    button{
+      overflow: hidden;
+      background-image: url(../../images/icons/icons.svg);
+      background-position: 0 -370px;
+      background-size: 24px auto;
+      width: 18px;
+      height: 17px;
+    }
   }
 }
 .best-item, .new-item, .review-item{

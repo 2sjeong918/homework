@@ -23,11 +23,8 @@
             </ul>
             <div class="col is-6 o-4">
                 <form id="search-form" role="search">
-                    <fieldset>
-                        <legend>검색 폼</legend>
                         <input type="search" required placeholder="검색어를 입력하세요">
                         <button type="submit" class="btn-search">검색</button>
-                    </fieldset>
                 </form>
             </div>
         </header>
@@ -54,11 +51,38 @@
         <div class="container">
             <div class="filter row">
                 <h2 class="col is-2 is-offset-5">필터를 설정하세요</h2>
-                <ul class="filter-list">
-                    <li class="col is-12">연령대</li>
-                    <li class="col is-12">스타일</li>
-                </ul>
-                <div class="col is-4 offset-4">버튼</div>
+                <form class="filter-list col is-12">
+                    <fieldset>
+                        <legend>연령대</legend>
+                        <label for="10">10대</label>
+                        <input id= "10" type="checkbox" name="" value="teen">
+                        <label for="20">20대</label>
+                        <input id= "20" type="checkbox" name="" value="twenty">
+                        <label for="30">30대</label>
+                        <input id= "30" type="checkbox" name="" value="thirty">
+                    </fieldset>
+                    <fieldset>
+                        <legend>스타일</legend>
+                        <label for="girl">소녀룩</label>
+                        <input id= "girl" type="checkbox" name="" value="girl">
+                        <label for="modern">모던시크</label>
+                        <input id= "modern" type="checkbox" name="" value="modern">
+                        <label for="simple">심플베이지</label>
+                        <input id= "simple" type="checkbox" name="" value="simple">
+                        <label for="romantic">로맨틱</label>
+                        <input id= "romantic" type="checkbox" name="" value="romantic">
+                        <label for="office">오피스룩</label>
+                        <input id= "office" type="checkbox" name="" value="office">
+                        <label for="campus">캠퍼스룩</label>
+                        <input id= "campus" type="checkbox" name="" value="campus">
+                        <label for="vintage">빈티지</label>
+                        <input id= "vintage" type="checkbox" name="" value="vintage">
+                        <label for="training">트레이닝</label>
+                        <input id= "training" type="checkbox" name="" value="training">
+                    </fieldset>
+                        <button type="reset">초기화</button>
+                        <button type="submit">필터 선택 완료</button>
+                </form>
             </div>
         </div>
     </div>
@@ -96,16 +120,17 @@
         <div class="best-seller row">
             <h2 class="best-heading">베스트 셀러</h2>
             <ul class="best-item">
-                <li class="col is-3">
+                <li class="col is-3 cott">
                     <a href="#">
                         <img src="images/best-seller/bs-seller-01.jpg" alt="">
                         <div class="desc">
                             <span>Zemma World</span>
                             <span>Puppy-코튼니트</span>
                             <span class="price">39,000원</span>
-                            <button type=""></button>
                         </div>
                     </a>
+                    <!--<input type="image" src="images/icons/icons.svg" name="" value="">-->
+                    <button type="button"></button>
                 </li>
                 <li class="col is-3">
                     <a href="#">
