@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo-group">
+            <img class="logo" src="logo.svg" alt="logo">
+        </div>
+        <form id="add">
+            <label class="label" for="date">날짜</label>
+            <input class="input" id="date" type="date" name="" value="">
+            <div class="select-number-group">
+                <div class="select-group">
+                    <label class="label">수입/지출</label>
+                    <span class="select">
+                        <select id="select">
+                            <option id="income">수입</option>
+                            <option id="outcome">지출</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="number-group">
+                    <label class="label" for="number">금액</label>
+                    <input class="input" id="number" type="number" name="" value="">
+                </div>
+            </div>
+            <label class="label" for="text">사용 내역</label>
+            <input class="input" id="text" type="text" name="" value="">
+            <div class="btn">
+                <button class="cancel-btn button is-primary" type="button">초기화</button>
+                <button class="add-btn button is-primary" type="button">저장</button>
+            </div>
+        </form>
+        <form action="" id="search">
+            <label for="date" class="label search-label">날짜</label>
+            <input type="date" class="input" id="find-date">
+            <div class="search-btn">
+                <button class="button is-search" type="button">조회</button>
+                <button class="button total-btn" type="button">전체 내역</button>
+            </div>
+        </form>
+        <div class="container">
+            <div class="data-header">
+                <ul class="data-list">
+                    <li class="data">날짜</li>
+                    <li class="data">수입/지출</li>
+                    <li class="data">금액</li>
+                    <li class="data">사용 내역</li>
+                    <li class="data">삭제</li>
+                </ul>
+            </div>
+
+            <div class="money-items">
+                
+            </div>
+
+            <div class="data-footer">
+                <!--<input class="input" type="text" id="list-date" readonly placeholder="날짜">
+                <label for="allsum">합계</label>
+                <input class="input" type="text" id="allsum" value readonly placeholder="합계">-->
+                <ul class="data-status">
+                    <li class="result-data">날짜</li>
+                    <li>합계</li>
+                    <li class="result-sum">합계 내용</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/x-template" id="user-list-template">
+        <div></div>
+    </script>
+    <script src="./js/jquery.ajax.min.js"></script>
+    <script src="./js/tungtung.js"></script>
+</body>
+</html>

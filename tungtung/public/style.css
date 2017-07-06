@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    /*background: yellow;*/
+    width: 940px;
+    height: 100vh;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+.logo{
+    width: 500px;
+}
+.logo-group{
+    margin: 0 auto;
+    text-align: center;
+}
+#add .btn{
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.search-btn{
+    /*display: inline-block;*/
+    /*margin-top: 20px;*/
+    display: flex;
+    margin-left: 20px;
+}
+.cancel-btn, .add-btn, .is-search, .total-btn{
+    font-weight: bold;
+}
+.total-btn{
+    margin-left: 5px;
+}
+#add{
+    width: 350px;
+    margin: 20px auto 0;
+    /*border: 2px solid #00d1b2;*/
+    /*border-radius: 5px;*/
+    /*padding: 20px;*/
+}
+#search{
+    width: 600px;
+    margin: 40px auto 0;
+    display: flex;
+    /*justify-content: space-between;*/
+    background: #00d1b2;
+    padding: 10px;
+    border-radius: 5px;
+}
+#add label{
+    margin-top: 10px;
+}
+.select-number-group{
+    display: flex;
+    justify-content: space-between;
+}
+.search-label{
+    display: none;
+}
+.container{
+    width: 940px;
+    height: 500px;
+    position: relative;
+    /*background: skyblue;*/
+    overflow: hidden;
+}
+.data-header{
+    position: sticky;
+    top: 0;
+}
+.data-list, .money-list{
+    display: flex;
+    width: 940px;
+    /*justify-content: space-around;*/
+    /*text-align: center;*/
+}
+.data-list{
+    justify-content: space-around;
+}
+.data-list, .data-status{
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 0;
+    background: #00d1b2;
+}
+.money-list{
+    /*background: green;*/
+    background-color: gainsboro;
+    margin-top: 10px;
+    /*margin-left: -25px;*/
+    padding: 5px 0 5px 50px;
+}
+.money-list :nth-child(1){
+    flex-grow: 1;
+}
+.money-list :nth-child(2){
+    flex-grow: 1;
+}
+.money-list :nth-child(3){
+    flex-grow: 1;
+}
+.money-list :nth-child(4){
+    flex-grow: 2;
+}
+.money-list :nth-child(5){
+    flex-grow: 1;
+}
+/*.data-list :nth-child(1){
+    flex-grow: 1;
+}
+.data-list :nth-child(2){
+    flex-grow: 1;
+}
+.data-list :nth-child(3){
+    flex-grow: 1;
+}
+.data-list :nth-child(4){
+    flex-grow: 2;
+}
+.data-list :nth-child(5){
+    flex-grow: 1;
+}*/
+.money-group{
+    position: relative;
+}
+
+.remove-button{
+    position: absolute;
+    top: 0;
+    right: 65px;
+    height: 100%;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 10px;
+    background: #00d1b2;
+    cursor: pointer;
+}
+.data-footer{
+    position: sticky;
+    bottom: 0;
+}
+.data-status{
+    /*margin: 0;*/
+    /*padding: 0;*/
+    display: flex;
+    width: 940px;
+    justify-content: space-around;
+    /*background: yellow;*/
+}
