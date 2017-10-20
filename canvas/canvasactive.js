@@ -50,11 +50,11 @@ var maxRadius = 40;
 var minRadius = 2;
 
 var colorArray = [
-  '#2E112D',
-  '#540032',
-  '#820333',
-  '#C9283E',
-  '#F0433A'
+  '#75d9d1',
+  '#5d5df6',
+  '#df4a6a',
+  '#ff4425',
+  '#48b781'
 ]
 
 window.addEventListener('mousemove',
@@ -95,7 +95,7 @@ function Circle(x, y, dx, dy, radius) {
 
     this.x += this.dx;
     this.y += this.dy;
-    
+
     // interactivity
     if (mouse.x - this.x < 50 && mouse.x - this.x > -50
         &&mouse.y -this.y < 50 && mouse.y - this.y > -50) {
